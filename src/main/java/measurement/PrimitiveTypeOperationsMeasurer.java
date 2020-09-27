@@ -1,4 +1,4 @@
-package measurementForLab;
+package measurement;
 
 public abstract class PrimitiveTypeOperationsMeasurer {
 

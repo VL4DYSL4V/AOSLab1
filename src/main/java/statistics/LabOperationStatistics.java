@@ -1,6 +1,6 @@
 package statistics;
 
-import measurementForLab.PrimitiveTypeOperationsMeasurer;
+import measurement.PrimitiveTypeOperationsMeasurer;
 import util.StatisticsUtils;
 
 public class LabOperationStatistics implements OperationStatistics {
