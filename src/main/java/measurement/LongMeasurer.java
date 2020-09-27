@@ -1,4 +1,4 @@
-package measurementForLab;
+package measurement;
 
 public class LongMeasurer extends PrimitiveTypeOperationsMeasurer {
 

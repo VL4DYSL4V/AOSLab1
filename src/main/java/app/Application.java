@@ -1,7 +1,7 @@
 package app;
 
 import data.Pair;
-import measurementForLab.*;
+import measurement.*;
 import statistics.LabOperationStatistics;
 import statistics.OperationStatistics;
 import tableFormer.TableFormer;

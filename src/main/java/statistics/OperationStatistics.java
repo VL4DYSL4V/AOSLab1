@@ -1,6 +1,6 @@
 package statistics;
 
-import measurementForLab.PrimitiveTypeOperationsMeasurer;
+import measurement.PrimitiveTypeOperationsMeasurer;
 
 public interface OperationStatistics {
     double addingStatistics(PrimitiveTypeOperationsMeasurer measurer, int iterAmount);
