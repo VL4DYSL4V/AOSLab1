@@ -17,10 +17,10 @@ public class Application {
     private Map<String, List<Pair<Double>>> data = new LinkedHashMap<>();
 
     public void run() {
+        calculateStatistics("long", new LongMeasurer(), 30);
         calculateStatistics("int", new IntMeasurer(), 40);
-        calculateStatistics("long", new LongMeasurer(), 20);
-        calculateStatistics("double", new DoubleMeasurer(), 20);
         calculateStatistics("float", new FloatMeasurer(), 20);
+        calculateStatistics("double", new DoubleMeasurer(), 30);
         calculatePercentage();
         System.out.println(tableFormer.getStatistics(Collections.unmodifiableMap(data)));
     }
@@ -51,7 +51,7 @@ public class Application {
         }
         for(String key: data.keySet()){
             for(Pair<Double> pair: data.get(key)){
-                pair.setSecond((pair.getFirst() * 100)/ maximum);
+                pair.setSecond((pair.getFirst() / maximum) * 100.0);
             }
         }
     }

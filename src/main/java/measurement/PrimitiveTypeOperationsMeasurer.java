@@ -4,7 +4,7 @@ public abstract class PrimitiveTypeOperationsMeasurer {
 
     private static final long timeOfMillionIterations = initializeIterTime();
 
-    private final int plusMinusIterAmount = 1_000_000;
+    private final int plusMinusIterAmount = 100_000;
 
     private final int multDivIterAmount = 1_000;
 
